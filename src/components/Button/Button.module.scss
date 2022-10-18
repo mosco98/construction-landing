@@ -1,0 +1,55 @@
+.Button {
+  min-width: 135px;
+  padding: 16px;
+  font-size: 14px;
+  @apply transition-all duration-200 ease-linear;
+
+  &.has_icon {
+    @apply flex items-center space-x-2;
+
+    svg {
+      @apply transition-all duration-100 ease-linear;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  &.Button-fill {
+    @apply bg-primary;
+    color: white;
+
+    @apply transition-all duration-200 ease-linear;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  &.Button.outine {
+    background: transparent;
+  }
+
+  &.Button-outline-white {
+    border: 2px solid white;
+    color: white;
+
+    &:hover {
+      background: white;
+      @apply text-primary;
+    }
+  }
+
+  &.Button-outline-black {
+    border: 2px solid black;
+    color: black;
+
+    &:hover {
+      background: black;
+      @apply text-white;
+    }
+  }
+}

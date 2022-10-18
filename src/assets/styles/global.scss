@@ -1,0 +1,73 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  letter-spacing: -0.085em;
+}
+
+.container {
+  @apply mx-auto md:px-12 px-6;
+}
+
+h1 {
+  font-size: 48px !important;
+  line-height: 72.96px !important;
+}
+
+h2 {
+  font-size: 36px !important;
+  line-height: 54.72px !important;
+}
+
+h3 {
+  font-size: 28px !important;
+  line-height: 42.56px !important;
+}
+
+h4 {
+  font-size: 24px !important;
+  line-height: 36.48px !important;
+}
+
+h5 {
+  font-size: 20px !important;
+  line-height: 24px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.12em;
+}
+
+p {
+  letter-spacing: -0.085em;
+}
+
+.second-section-has_bg {
+  overflow: hidden;
+
+  img {
+    @apply h-full object-cover;
+  }
+}
+
+input,
+textarea {
+  @apply border border-primary outline-none;
+
+  padding: 10px !important;
+}
+
+textarea {
+  height: 140px !important;
+}
+
+.about-section {
+  background: url("../../assets/images/contact.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

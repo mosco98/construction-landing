@@ -1,0 +1,19 @@
+.Footer {
+  @apply pt-24 text-center;
+
+  ul {
+    @apply flex items-center justify-center mt-9;
+
+    &.links {
+      @apply space-x-24;
+    }
+
+    &.socials {
+      @apply space-x-6;
+    }
+  }
+
+  .bottom {
+    @apply border-t border-primary pt-3 pb-8 mt-9;
+  }
+}

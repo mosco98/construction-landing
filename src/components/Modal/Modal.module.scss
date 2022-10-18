@@ -1,0 +1,15 @@
+.Modal {
+  @apply fixed top-0 h-screen w-full grid place-items-center backdrop-blur-sm;
+
+  z-index: 1000000000;
+
+  .ModalOverlay {
+    @apply absolute top-0 bg-primary/70 h-screen w-full;
+    z-index: 10000000000;
+  }
+
+  .ModalContent {
+    @apply absolute bg-white w-1/2 p-12 overflow-y-auto max-h-[95%];
+    z-index: 100000000000;
+  }
+}
