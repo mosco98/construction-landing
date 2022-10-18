@@ -1,32 +1,32 @@
-import classNames from "classnames";
-import Button from "../../components/Button/Button";
-import Layout from "../../components/Layout";
-import styles from "./Home.module.scss";
+import classNames from "classnames"
+import Button from "../../components/Button/Button"
+import Layout from "../../components/Layout"
+import styles from "./Home.module.scss"
 
-import Afterpay from "../../assets/images/Afterpay.svg";
-import Airbnb from "../../assets/images/Airbnb.svg";
-import Attentive from "../../assets/images/Attentive.svg";
-import Hopin from "../../assets/images/Hopin.svg";
-import Stripe from "../../assets/images/Stripe.svg";
+import Afterpay from "../../assets/images/Afterpay.svg"
+import Airbnb from "../../assets/images/Airbnb.svg"
+import Attentive from "../../assets/images/Attentive.svg"
+import Hopin from "../../assets/images/Hopin.svg"
+import Stripe from "../../assets/images/Stripe.svg"
 
-import AboutImg from "../../assets/images/about.png";
-import HeroImg from "../../assets/images/hero.png";
-import SectionImg from "../../assets/images/section-bg.png";
+import AboutImg from "../../assets/images/about.png"
+import HeroImg from "../../assets/images/hero.png"
+import SectionImg from "../../assets/images/section-bg.png"
 
-import { motion } from "framer-motion";
-import Project1 from "../../assets/images/project-1.png";
-import Project2 from "../../assets/images/project-2.png";
-import Project3 from "../../assets/images/project-3.png";
-import { useAppContext } from "../../utils/AppContext";
+import { motion } from "framer-motion"
+import Project1 from "../../assets/images/project-1.png"
+import Project2 from "../../assets/images/project-2.png"
+import Project3 from "../../assets/images/project-3.png"
+import { useAppContext } from "../../utils/AppContext"
 
 export default function Home() {
-  const { setIsContactModalOpen } = useAppContext();
+  const { setIsContactModalOpen } = useAppContext()
 
   return (
     <Layout navPosition={"absolute"}>
       <div className={classNames(styles.Home)}>
         <div className={styles.Hero}>
-          <div className="px-12 self-center pt-40 pb-20">
+          <div className="md:px-12 px-6 self-center md:pt-40 pt-32 md:pb-20 pb-12">
             <div>
               <motion.h1
                 initial={{ opacity: 0 }}
@@ -55,7 +55,7 @@ export default function Home() {
               >
                 <Button
                   text={"Send inquiry"}
-                  className="mt-14"
+                  className="md:mt-14 mt-7"
                   icon={
                     <svg
                       width={24}
@@ -81,21 +81,27 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="flex items-center space-x-6 pt-16 pb-6"
+                className="flex items-center space-x-6 pt-16 md:pb-6"
               >
                 <div className="text-center">
                   <h3>300+</h3>
-                  <p className="text-[14px]">Project complete</p>
+                  <p className="md:text-[14px] text-[12px] md:mt-0 mt-1">
+                    Project complete
+                  </p>
                 </div>
 
                 <div className="text-center">
                   <h3>25+</h3>
-                  <p className="text-[14px]">Professional team</p>
+                  <p className="md:text-[14px] text-[12px] md:mt-0 mt-1">
+                    Professional team
+                  </p>
                 </div>
 
                 <div className="text-center">
                   <h3>10+</h3>
-                  <p className="text-[14px]">Years experience</p>
+                  <p className="md:text-[14px] text-[12px] md:mt-0 mt-1">
+                    Years experience
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -112,7 +118,7 @@ export default function Home() {
         </div>
 
         <section className="bg-primary">
-          <div className="container flex items-center justify-between py-6">
+          <div className="container flex items-center justify-between py-6 overflow-x-auto md:space-x-0 space-x-6">
             <img className="object-contain" src={Airbnb} alt="Airbnb" />
             <img className="object-contain" src={Afterpay} alt="Afterpay" />
             <img className="object-contain" src={Stripe} alt="Stripe" />
@@ -132,7 +138,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="px-11 pt-24 pb-9">
+          <div className="md:px-11 px-6 md:pt-24 pt-8 pb-9">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -147,7 +153,7 @@ export default function Home() {
               </p>
 
               <div className="space-y-8 mt-9">
-                <div className="flex space-x-8">
+                <div className="flex md:space-x-8 space-x-6">
                   <div className="pt-1">
                     <div className={styles.number_ctn}>
                       <span className="text-[20px] text-white">1</span>
@@ -164,7 +170,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex space-x-8">
+                <div className="flex md:space-x-8 space-x-6">
                   <div className="pt-1">
                     <div className={styles.number_ctn}>
                       <span className="text-[20px] text-white">2</span>
@@ -181,7 +187,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex space-x-8">
+                <div className="flex md:space-x-8 space-x-6">
                   <div className="pt-1">
                     <div className={styles.number_ctn}>
                       <span className="text-[20px] text-white">3</span>
@@ -198,7 +204,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex space-x-8">
+                <div className="flex md:space-x-8 space-x-6">
                   <div className="pt-1">
                     <div
                       className={classNames(styles.number_ctn, styles.no_dots)}
@@ -244,7 +250,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-28">
+        <section className="md:py-28 py-14">
           <motion.div
             initial={{ y: 50 }}
             whileInView={{ y: 0 }}
@@ -253,7 +259,7 @@ export default function Home() {
             className="container"
             id="services"
           >
-            <div className="text-center mb-16">
+            <div className="text-center md:mb-16 mb-8">
               <h2>Our services</h2>
               <p className="mt-5 text-ash max-w-[619px] mx-auto">
                 To make sure our clients reach their real estate goals, we
@@ -272,7 +278,7 @@ export default function Home() {
                 <p className="pt-1 text-ash">01</p>
                 <div className="px-5">
                   <h4>Architecture</h4>
-                  <p className="text-[14px] max-w-[621px] text-ash">
+                  <p className="text-[14px] max-w-[621px] text-ash md:mt-0 mt-2">
                     The practice of architecture is employed to fulfill both
                     practical and expressive requirements, and thus it serves
                     both utilitarian and aesthetic ends. As part of our
@@ -290,7 +296,7 @@ export default function Home() {
                 <p className="pt-1 text-ash">02</p>
                 <div className="px-5">
                   <h4>Renovation</h4>
-                  <p className="text-[14px] max-w-[621px] text-ash">
+                  <p className="text-[14px] max-w-[621px] text-ash md:mt-0 mt-2">
                     We provide quality work while keeping our renovation
                     services affordable. we are fast and reliable.
                   </p>
@@ -306,7 +312,7 @@ export default function Home() {
                 <p className="pt-1 text-ash">03</p>
                 <div className="px-5">
                   <h4>Design and build</h4>
-                  <p className="text-[14px] max-w-[621px] text-ash">
+                  <p className="text-[14px] max-w-[621px] text-ash md:mt-0 mt-2">
                     As a forward-thinking building and construction firm, we
                     draw on the breadth of our design and technical knowledge to
                     produce an effective
@@ -323,7 +329,7 @@ export default function Home() {
                 <p className="pt-1 text-ash">04</p>
                 <div className="px-5">
                   <h4>General contracting</h4>
-                  <p className="text-[14px] max-w-[621px] text-ash">
+                  <p className="text-[14px] max-w-[621px] text-ash md:mt-0 mt-2">
                     Through proven safety, quality, and planning procedures, we
                     manage a powerful team in an inspiring environment.
                   </p>
@@ -351,8 +357,8 @@ export default function Home() {
             </div>
 
             <div className="mt-10 relative">
-              <div className="max-w-[1200px] min-h-[568px] bg-[#EDEDED] mx-auto sticky top-0 text-primary grid grid-cols-12 group">
-                <div className="col-span-7 self-center px-16">
+              <div className="max-w-[1200px] min-h-[568px] bg-[#EDEDED] mx-auto md:sticky md:top-0 text-primary grid grid-cols-12 group mb-8 md:mb-0">
+                <div className="md:col-span-7 col-span-12 self-center md:px-16 px-4 md:py-0 py-4 md:order-1 order-2">
                   <h2>University of denmark</h2>
                   <p className="text-[14px] max-w-[498px] text-ash mt-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -363,12 +369,10 @@ export default function Home() {
                   </p>
 
                   <svg
-                    width={88}
-                    height={88}
                     viewBox="0 0 88 88"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mt-24 hover:opacity-80 transition-all duration-150 ease-linear cursor-pointer"
+                    className="md:mt-24 mt-8 hover:opacity-80 transition-all duration-150 ease-linear cursor-pointer md:w-[88px] md:h-[88px] w-12 h-12"
                   >
                     <path
                       d="M14.6666 43.9999H73.3333M73.3333 43.9999L47.6666 18.3333M73.3333 43.9999L47.6666 69.6666"
@@ -379,28 +383,28 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <div className="col-span-5 overflow-hidden">
+                <div className="md:col-span-5 col-span-12 overflow-hidden relative md:order-2 order-1">
                   <img
                     className="object-cover group-hover:transform group-hover:scale-150 transition-all duration-200 ease-linear"
                     src={Project1}
                     alt=""
                   />
-                </div>
 
-                <div className="absolute right-0 bottom-0 bg-white flex items-center space-x-8 py-2 px-5">
-                  <div>
-                    <p className="text-[14px] text-ash mb-1">Area</p>
-                    <h4>46,5 ha</h4>
-                  </div>
-                  <div>
-                    <p className="text-[14px] text-ash mb-1">Style</p>
-                    <h4>Futuristic</h4>
+                  <div className="absolute right-0 md:bottom-0 top-0 md:top-auto bg-white flex items-center space-x-8 py-2 px-5">
+                    <div>
+                      <p className="text-[14px] text-ash mb-1">Area</p>
+                      <h4>46,5 ha</h4>
+                    </div>
+                    <div>
+                      <p className="text-[14px] text-ash mb-1">Style</p>
+                      <h4>Futuristic</h4>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="max-w-[1200px] min-h-[568px] bg-[#F7F7F7] mx-auto sticky top-0 text-primary grid grid-cols-12 group">
-                <div className="col-span-7 self-center px-16">
+              <div className="max-w-[1200px] min-h-[568px] bg-[#F7F7F7] mx-auto md:sticky md:top-0 text-primary grid grid-cols-12 group mb-8 md:mb-0">
+                <div className="md:col-span-7 col-span-12 self-center md:px-16 px-4 md:py-0 py-4 md:order-1 order-2">
                   <h2>Oxburgh Hall</h2>
                   <p className="text-[14px] max-w-[498px] text-ash mt-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -411,12 +415,10 @@ export default function Home() {
                   </p>
 
                   <svg
-                    width={88}
-                    height={88}
                     viewBox="0 0 88 88"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mt-24 hover:opacity-80 transition-all duration-150 ease-linear cursor-pointer"
+                    className="md:mt-24 mt-8 hover:opacity-80 transition-all duration-150 ease-linear cursor-pointer md:w-[88px] md:h-[88px] w-12 h-12"
                   >
                     <path
                       d="M14.6666 43.9999H73.3333M73.3333 43.9999L47.6666 18.3333M73.3333 43.9999L47.6666 69.6666"
@@ -427,28 +429,28 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <div className="col-span-5 overflow-hidden">
+                <div className="md:col-span-5 col-span-12 overflow-hidden relative md:order-2 order-1">
                   <img
                     className="object-cover group-hover:transform group-hover:scale-150 transition-all duration-200 ease-linear"
                     src={Project2}
                     alt=""
                   />
-                </div>
 
-                <div className="absolute right-0 bottom-0 bg-white flex items-center space-x-8 py-2 px-5">
-                  <div>
-                    <p className="text-[14px] text-ash mb-1">Area</p>
-                    <h4>21,3 ha</h4>
-                  </div>
-                  <div>
-                    <p className="text-[14px] text-ash mb-1">Style</p>
-                    <h4>Futuristic</h4>
+                  <div className="absolute right-0 md:bottom-0 top-0 md:top-auto bg-white flex items-center space-x-8 py-2 px-5">
+                    <div>
+                      <p className="text-[14px] text-ash mb-1">Area</p>
+                      <h4>21,3 ha</h4>
+                    </div>
+                    <div>
+                      <p className="text-[14px] text-ash mb-1">Style</p>
+                      <h4>Futuristic</h4>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="max-w-[1200px] min-h-[568px] bg-[#FFFFFF] mx-auto sticky top-0 text-primary grid grid-cols-12 group">
-                <div className="col-span-7 self-center px-16">
+              <div className="max-w-[1200px] min-h-[568px] bg-[#FFFFFF] mx-auto md:sticky md:top-0 text-primary grid grid-cols-12 group mb-8 md:mb-0">
+                <div className="md:col-span-7 col-span-12 self-center md:px-16 px-4 md:py-0 py-4 md:order-1 order-2">
                   <h2>St. Paul’s Cathedral</h2>
                   <p className="text-[14px] max-w-[498px] text-ash mt-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -459,12 +461,10 @@ export default function Home() {
                   </p>
 
                   <svg
-                    width={88}
-                    height={88}
                     viewBox="0 0 88 88"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mt-24 hover:opacity-80 transition-all duration-150 ease-linear cursor-pointer"
+                    className="md:mt-24 mt-8 hover:opacity-80 transition-all duration-150 ease-linear cursor-pointer md:w-[88px] md:h-[88px] w-12 h-12"
                   >
                     <path
                       d="M14.6666 43.9999H73.3333M73.3333 43.9999L47.6666 18.3333M73.3333 43.9999L47.6666 69.6666"
@@ -475,22 +475,22 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <div className="col-span-5 overflow-hidden">
+                <div className="md:col-span-5 col-span-12 overflow-hidden relative md:order-2 order-1">
                   <img
                     className="object-cover group-hover:transform group-hover:scale-150 transition-all duration-200 ease-linear"
                     src={Project3}
                     alt=""
                   />
-                </div>
 
-                <div className="absolute right-0 bottom-0 bg-white flex items-center space-x-8 py-2 px-5">
-                  <div>
-                    <p className="text-[14px] text-ash mb-1">Area</p>
-                    <h4>62,8 ha</h4>
-                  </div>
-                  <div>
-                    <p className="text-[14px] text-ash mb-1">Style</p>
-                    <h4>Futuristic</h4>
+                  <div className="absolute right-0 md:bottom-0 top-0 md:top-auto bg-white flex items-center space-x-8 py-2 px-5">
+                    <div>
+                      <p className="text-[14px] text-ash mb-1">Area</p>
+                      <h4>62,8 ha</h4>
+                    </div>
+                    <div>
+                      <p className="text-[14px] text-ash mb-1">Style</p>
+                      <h4>Futuristic</h4>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -522,7 +522,7 @@ export default function Home() {
                 negotiation skills, and trust.
               </p>
             </motion.div>
-            <div>
+            <div className="md:pt-0 pt-8">
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -536,7 +536,7 @@ export default function Home() {
         </section>
 
         <section className="about-section">
-          <div className="text-center bg-primary/70 py-20">
+          <div className="text-center bg-primary/50 md:py-20 py-10">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -545,7 +545,7 @@ export default function Home() {
             >
               <h1 className="text-white">Entrust us with your construction!</h1>
               <Button
-                className={"mt-12 mx-auto"}
+                className={"md:mt-12 mt-6 mx-auto"}
                 text={"Send inquiry"}
                 type="outline"
                 variant={"white"}
@@ -573,5 +573,5 @@ export default function Home() {
         </section>
       </div>
     </Layout>
-  );
+  )
 }

@@ -1,0 +1,14 @@
+.MobileMenu {
+  @apply fixed top-0 bg-white left-0 w-full h-screen p-6  md:hidden;
+
+  background: url("../../assets/images/section-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 1000000;
+
+  .content {
+    @apply absolute top-0 left-0 w-full bg-primary/60 h-screen grid place-items-center;
+  }
+}

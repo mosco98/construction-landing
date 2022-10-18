@@ -2,6 +2,10 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   letter-spacing: -0.085em;
+
+  @media (max-width: 768px) {
+    font-size: 14px !important;
+  }
 }
 
 .container {
@@ -11,26 +15,51 @@ html {
 h1 {
   font-size: 48px !important;
   line-height: 72.96px !important;
+
+  @media (max-width: 768px) {
+    font-size: 32px !important;
+    line-height: 42.96px !important;
+  }
 }
 
 h2 {
   font-size: 36px !important;
   line-height: 54.72px !important;
+
+  @media (max-width: 768px) {
+    font-size: 28px !important;
+    line-height: 32.96px !important;
+  }
 }
 
 h3 {
   font-size: 28px !important;
   line-height: 42.56px !important;
+
+  @media (max-width: 768px) {
+    font-size: 22px !important;
+    line-height: 22.96px !important;
+  }
 }
 
 h4 {
   font-size: 24px !important;
   line-height: 36.48px !important;
+
+  @media (max-width: 768px) {
+    font-size: 20px !important;
+    line-height: 20.96px !important;
+  }
 }
 
 h5 {
   font-size: 20px !important;
   line-height: 24px !important;
+
+  @media (max-width: 768px) {
+    font-size: 18px !important;
+    line-height: 20.96px !important;
+  }
 }
 
 h1,

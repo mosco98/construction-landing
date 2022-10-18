@@ -1,8 +1,7 @@
 .Button {
   min-width: 135px;
   padding: 16px;
-  font-size: 14px;
-  @apply transition-all duration-200 ease-linear;
+  @apply md:text-[14px] text-[12px] transition-all duration-200 ease-linear;
 
   &.has_icon {
     @apply flex items-center space-x-2;

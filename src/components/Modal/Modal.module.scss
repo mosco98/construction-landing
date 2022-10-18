@@ -9,7 +9,7 @@
   }
 
   .ModalContent {
-    @apply absolute bg-white w-1/2 p-12 overflow-y-auto max-h-[95%];
+    @apply absolute bg-white md:w-1/2 w-full md:p-12 p-6 overflow-y-auto md:max-h-[95%] max-h-full h-screen md:h-auto md:block grid place-items-center;
     z-index: 100000000000;
   }
 }
