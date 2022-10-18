@@ -1,24 +1,24 @@
-import { AnimatePresence, motion } from "framer-motion"
-import { useEffect } from "react"
-import styles from "./Modal.module.scss"
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
+import styles from "./Modal.module.scss";
 
 export default function Modal({ children, isOpen, close, title, subTitle }) {
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset"
+      document.body.style.overflow = "unset";
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   useEffect(() => {
     const closeOnEscapeKey = (e) =>
-      e.key === "Escape" && close ? close() : null
+      e.key === "Escape" && close ? close() : null;
 
-    document.body.addEventListener("keydown", closeOnEscapeKey)
+    document.body.addEventListener("keydown", closeOnEscapeKey);
 
-    return () => document.body.removeEventListener("keydown", closeOnEscapeKey)
-  }, [close])
+    return () => document.body.removeEventListener("keydown", closeOnEscapeKey);
+  }, [close]);
 
   return (
     <AnimatePresence initial={false}>
@@ -58,5 +58,5 @@ export default function Modal({ children, isOpen, close, title, subTitle }) {
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }

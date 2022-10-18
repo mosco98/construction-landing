@@ -1,9 +1,9 @@
-import classNames from "classnames"
+import classNames from "classnames";
 
 export default function Logo({ onClick, className }) {
   const onClickHandler = () => {
-    onClick && onClick()
-  }
+    onClick && onClick();
+  };
 
   return (
     <svg
@@ -35,5 +35,5 @@ export default function Logo({ onClick, className }) {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

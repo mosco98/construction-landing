@@ -1,12 +1,12 @@
-import { motion } from "framer-motion"
-import { useAppContext } from "../utils/AppContext"
-import Button from "./Button/Button"
-import Footer from "./Footer/Footer"
-import Modal from "./Modal/Modal"
-import Navbar from "./Navbar/Navbar"
+import { motion } from "framer-motion";
+import { useAppContext } from "../utils/AppContext";
+import Button from "./Button/Button";
+import Footer from "./Footer/Footer";
+import Modal from "./Modal/Modal";
+import Navbar from "./Navbar/Navbar";
 
 export default function Layout({ children, navPosition }) {
-  const { isContactModalOpen, setIsContactModalOpen } = useAppContext()
+  const { isContactModalOpen, setIsContactModalOpen } = useAppContext();
 
   return (
     <motion.div
@@ -68,5 +68,5 @@ export default function Layout({ children, navPosition }) {
         </form>
       </Modal>
     </motion.div>
-  )
+  );
 }

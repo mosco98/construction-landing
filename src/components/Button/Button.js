@@ -1,5 +1,5 @@
-import cn from "classnames"
-import styles from "./Button.module.scss"
+import cn from "classnames";
+import styles from "./Button.module.scss";
 
 export default function Button({
   icon,
@@ -7,9 +7,9 @@ export default function Button({
   text,
   variant = "primary",
   className,
-  onClick
+  onClick,
 }) {
-  const clickHandler = () => onClick && onClick()
+  const clickHandler = () => onClick && onClick();
 
   const buttonClassnames = cn(
     styles.Button,
@@ -17,12 +17,12 @@ export default function Button({
     styles[`Button-${type}-${variant}`],
     icon && styles.has_icon,
     className
-  )
+  );
 
   return (
     <button className={buttonClassnames} onClick={clickHandler}>
       <span>{text}</span>
       {icon && icon}
     </button>
-  )
+  );
 }

@@ -1,26 +1,26 @@
-import classNames from "classnames"
-import Button from "../../components/Button/Button"
-import Layout from "../../components/Layout"
-import styles from "./Home.module.scss"
+import classNames from "classnames";
+import Button from "../../components/Button/Button";
+import Layout from "../../components/Layout";
+import styles from "./Home.module.scss";
 
-import Afterpay from "../../assets/images/Afterpay.svg"
-import Airbnb from "../../assets/images/Airbnb.svg"
-import Attentive from "../../assets/images/Attentive.svg"
-import Hopin from "../../assets/images/Hopin.svg"
-import Stripe from "../../assets/images/Stripe.svg"
+import Afterpay from "../../assets/images/Afterpay.svg";
+import Airbnb from "../../assets/images/Airbnb.svg";
+import Attentive from "../../assets/images/Attentive.svg";
+import Hopin from "../../assets/images/Hopin.svg";
+import Stripe from "../../assets/images/Stripe.svg";
 
-import AboutImg from "../../assets/images/about.png"
-import HeroImg from "../../assets/images/hero.png"
-import SectionImg from "../../assets/images/section-bg.png"
+import AboutImg from "../../assets/images/about.png";
+import HeroImg from "../../assets/images/hero.png";
+import SectionImg from "../../assets/images/section-bg.png";
 
-import { motion } from "framer-motion"
-import Project1 from "../../assets/images/project-1.png"
-import Project2 from "../../assets/images/project-2.png"
-import Project3 from "../../assets/images/project-3.png"
-import { useAppContext } from "../../utils/AppContext"
+import { motion } from "framer-motion";
+import Project1 from "../../assets/images/project-1.png";
+import Project2 from "../../assets/images/project-2.png";
+import Project3 from "../../assets/images/project-3.png";
+import { useAppContext } from "../../utils/AppContext";
 
 export default function Home() {
-  const { setIsContactModalOpen } = useAppContext()
+  const { setIsContactModalOpen } = useAppContext();
 
   return (
     <Layout navPosition={"absolute"}>
@@ -573,5 +573,5 @@ export default function Home() {
         </section>
       </div>
     </Layout>
-  )
+  );
 }

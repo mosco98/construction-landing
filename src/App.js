@@ -1,6 +1,6 @@
-import React from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Home } from "./pages"
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 // 48 36 28 24 12 16

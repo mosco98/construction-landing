@@ -1,10 +1,11 @@
 .Navbar {
   z-index: 10000;
+
   & > div {
     @apply py-3 flex items-center justify-between;
 
     & > div {
-      @apply flex items-center justify-between md:flex-grow max-w-[510px];
+      @apply flex items-center justify-between max-w-[510px] md:flex-grow;
 
       ul {
         @apply items-center space-x-12 hidden md:flex;

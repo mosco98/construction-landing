@@ -1,5 +1,5 @@
-import Logo from "../Logo/Logo"
-import styles from "./Footer.module.scss"
+import Logo from "../Logo/Logo";
+import styles from "./Footer.module.scss";
 
 export default function Footer() {
   return (
@@ -92,5 +92,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
